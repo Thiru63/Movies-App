@@ -46,3 +46,12 @@
     outline: none;
   }
 }
+
+@media only screen and (max-width: 1024px){
+ .search-bar input {
+      // font-weight: 400;
+      font-size: 15px;
+      width: auto;
+      
+  }
+}
