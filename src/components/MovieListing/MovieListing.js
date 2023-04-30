@@ -8,6 +8,9 @@ import "./MovieListing.scss";
 const MovieListing = () => {
   const movies = useSelector(getAllMovies);
   const shows = useSelector(getAllShows);
+   
+  if(!movies || !shows) return <h1>Loading...</h1>
+
   let renderMovies,
     renderShows = "";
 

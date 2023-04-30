@@ -22,7 +22,7 @@ const MovieDetail = () => {
   return (
     <div className="movie-section">
       {Object.keys(data).length === 0 ? (
-        <div>...Loading</div>
+        <h1>Loading...</h1>
       ) : (
         <>
           <div className="section-left">
@@ -67,7 +67,7 @@ const MovieDetail = () => {
             </div>
           </div>
           <div className="section-right">
-            <img src={data.Poster} alt={data.Title} />
+            <img className="imgpos" src={data.Poster} alt={data.Title} />
           </div>
         </>
       )}
